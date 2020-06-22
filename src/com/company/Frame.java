@@ -1,11 +1,14 @@
 package com.company;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Frame {
 
     public static void main(String[] args) {
-        int frame_width = 20, pic_width = 6, pic_x = 1, frame_height = 10, pic_height = 4, pic_y = 3;
+        Scanner scanner = new Scanner(System.in);
+        int frame_width = scanner.nextInt(), pic_width  = scanner.nextInt(), pic_x = scanner.nextInt(),
+                frame_height = scanner.nextInt(), pic_height = scanner.nextInt(), pic_y = scanner.nextInt();
         int[][] arr = new int[frame_width][frame_height];
         for (int i=pic_y; i<pic_height+pic_y ; i++) {
             for (int j=pic_x; j<pic_width+pic_x ; j++){
